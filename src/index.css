@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #0B2434;
+    padding:20px;
+    font-family: 'Karla', sans-serifs;
+}
+
+main {
+    background-color: #F5F5F5;
+    height:700px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.diceContainer{
+    display: grid;
+    grid-template: auto auto / repeat(5, 1fr);
+    gap: 25px;
+    padding:20px;
+
+}
+
+.diceNotHeld, .diceHeld{
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.diceHeld{
+    background-color: #59E391;
+}
+.diceNotHeld{
+    background-color: white;
+}
+.dieNum{
+    font-size: 30px;
+}
+.rollButton{
+    height: 50px;
+    width: 100px;
+    font-size: 15px;
+    border: 1px solid; 
+    background-color: white;  
+    cursor: pointer; 
+    transition: opacity 0.15s;
+    background-color: #5035FF;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Karla', sans-serif;
+}
+
+.rollButton:active{
+    opacity: 0.8;
+    
+}
